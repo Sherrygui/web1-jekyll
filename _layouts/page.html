@@ -30,8 +30,21 @@
 				<li><a href="{{ site.baseurl }}/">Home</a></li>
 				<li><a href="{{ site.baseurl }}/forecast">Forecast</a></li>
 				<li><a href="{{ site.baseurl }}/operations">Operations</a></li>
+				<li><a href="{{ site.baseurl }}/goundhog">Goundghog</a></li>
 			</ul>
 		</nav>
+		
+		
+	<hr>
+		<% for p in site.pages %>
+			{%if p.animal =="rodent"%
+				<a href="{{p.permalink}}">{{p.title}}</a>
+			{% endif %}
+		{% endfor %}
+			
+			
+		
+			
 		
         <h1>{{ page.title }}</h1>
 		
